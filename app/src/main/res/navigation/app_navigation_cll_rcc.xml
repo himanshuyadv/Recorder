@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation_cllrcc"
+    app:startDestination="@id/action_contacts">
+    <fragment
+        android:id="@+id/action_contacts"
+        android:name="com.ansh.recorder.ui.contacts.ContactListFragment"
+        android:label="Contacts"
+        tools:layout="@layout/fragment_contact_list">
+        <action
+            android:id="@+id/action_action_contacts_to_moreFragment"
+            app:destination="@id/moreFragmentAN" />
+    </fragment>
+    <fragment
+        android:id="@+id/action_record"
+        android:name="com.ansh.recorder.ui.recording.RecordFragment"
+        android:label="Record"
+        tools:layout="@layout/fragment_record">
+        <action
+            android:id="@+id/action_action_record_to_verifyRecordFragment"
+            app:destination="@id/verifyRecordFragment" />
+        <action
+            android:id="@+id/action_action_record_to_moreFragment"
+            app:destination="@id/moreFragmentAN" />
+    </fragment>
+    <fragment
+        android:id="@+id/action_call_history"
+        android:name="com.ansh.recorder.ui.call_history.CallHistoryFragment"
+        android:label="Call History"
+        tools:layout="@layout/fragment_call_history">
+        <action
+            android:id="@+id/action_action_call_history_to_moreFragment"
+            app:destination="@id/moreFragmentAN" />
+    </fragment>
+    <fragment
+        android:id="@+id/action_recording_history"
+        android:name="com.ansh.recorder.ui.record_history.RecordHistoryFragment"
+        android:label="Record History"
+        tools:layout="@layout/fragment_record_history">
+        <action
+            android:id="@+id/action_action_recording_history_to_moreFragment"
+            app:destination="@id/moreFragmentAN" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyRecordFragment"
+        android:name="com.ansh.recorder.ui.recording.verify_cll_rec.VerifyRecordFragment"
+        android:label="Verification record" />
+    <fragment
+        android:id="@+id/moreFragmentAN"
+        android:name="com.ansh.recorder.ui.more.MoreFragment"
+        android:label="Menu">
+        <action
+            android:id="@+id/action_moreFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.ansh.recorder.ui.more.PasswordFragment"
+        android:label="" />
+
+</navigation>

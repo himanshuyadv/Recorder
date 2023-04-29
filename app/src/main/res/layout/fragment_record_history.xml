@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_gradient_cll_rcc"
+        tools:context=".ui.record_history.RecordHistoryFragment">
+
+
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/recycler_play_list"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/card_view_et"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />-->
+
+
+        <ExpandableListView
+            android:id="@+id/recordsListView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:animateLayoutChanges="true"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:dividerHeight="8dp"
+            android:groupIndicator="@null"
+            android:splitMotionEvents="false"
+           app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_view_et" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/contacts_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:backgroundTint="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_search_light_cllrcc"
+                android:focusedByDefault="false"
+                android:hint="@string/search_hint"
+                android:imeOptions="actionSearch"
+                android:maxLength="20"
+                android:padding="12dp"
+                android:textColor="@color/main_text_color_cll_rcc"
+                android:textColorHint="@color/metall"
+                tools:targetApi="o" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="view"
+            type="android.view.View" />
+
+        <variable
+            name="isFirstOrLastItem"
+            type="Boolean"
+            android:value="false" />
+
+        <variable
+            name="record"
+            type="com.ansh.recorder.core.data.model.RecordModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+
+            android:id="@+id/avatar_play_list"
+            setRecordAvatar="@{record}"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="30dp"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/Corner50"
+            app:strokeColor="#52000000"
+            app:strokeWidth="1dp"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/avatar_play_list"
+            app:layout_constraintEnd_toStartOf="@id/ll_date"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/avatar_play_list"
+            app:layout_constraintTop_toTopOf="@id/avatar_play_list">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvRecName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="middle"
+                android:fontFamily="@font/montserrat_cll_rcc"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="2dp"
+                android:singleLine="true"
+                android:text="@{record.nameCllRcc}"
+                android:textColor="@color/main_text_color_cll_rcc"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="986854789_0184.m4a" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/montserrat_cll_rcc"
+                android:paddingHorizontal="2dp"
+                android:text="@{record.numberCllRcc}"
+                android:textColor="@color/medium"
+                android:textSize="12sp"
+                tools:text="986854789" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/avatar_play_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/avatar_play_list"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/duration"
+                setRecordDuration="@{record}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="@font/montserrat_cll_rcc"
+                android:textColor="@color/medium"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="01:02:03" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date"
+                setRecordDate="@{record}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_cll_rcc"
+                android:textColor="@color/medium"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="01.02.2022 22:01" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+
+            android:id="@+id/view_lir"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:alpha="0.15"
+            android:background="@color/black_cll_rcc"
+            android:visibility="@{isFirstOrLastItem? view.GONE: view.VISIBLE}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_dot"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#7B7B7B"
+            app:cardCornerRadius="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toEndOf="@+id/ll_date"
+            app:layout_constraintTop_toTopOf="@+id/ll_date" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:backgroundTint="#7B7B7B"
+            app:cardCornerRadius="3dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView3"
+            app:layout_constraintEnd_toEndOf="@+id/card_view_dot"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_dot" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#7B7B7B"
+            app:cardCornerRadius="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ll_date"
+            app:layout_constraintEnd_toEndOf="@+id/card_view_dot" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

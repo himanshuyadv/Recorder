@@ -1,0 +1,28 @@
+<resources>
+
+
+    <!--    Subscription Screen Strings   -->
+    <string name="terms_of_use">Kasutustingimused</string>
+    <string name="privacy_policy_cllrcc">Privaatsuspoliitika</string>
+    <string name="translatable_short_desc">Pakkumise lõppedes tasutakse tellimus automaatselt ja teilt võetakse kord nädalas tasu 29,99 dollarit, kuni tellimusest loobute. Saate tellimusest igal ajal loobuda. Tutvuge meie privaatsuspoliitika ja kasutustingimustega.</string>
+    <string name="subs_link" translatable="false"> <a href="https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&amp;hl=en_US/"> https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&amp;hl=en_US</a></string>
+    <string name="subscription_info_long" translatable="false">The cost of a weekly subscription, immediately after the end of the trial period, is $30.99. There is no free content in this app and you need to subscribe to use it. The subscription lasts 1 week and costs $30.99. At the end of the 3-day trial period, you will be charged. If you do not turn off the subscription at least 24 hours before the end of the trial period, then the trial version will be automatically renewed to the paid ones. You can turn off auto-renewal in your Google Play account settings. Buying a subscription means that you get unlimited access to all available content. After the end of the free trial period, your subscription will automatically renew: \n * You can unsubscribe at any time. \n * At first, you have the option of a free three-day trial. It starts immediately after confirmation of payment. Payment is only charged after the expiration date. The Premium subscription will automatically renew for 1 week for $30.99. \n * Payment is charged only after confirmation of purchase from your Google account. \n * Automatic renewal of the trial period, like a paid subscription, is inevitable if you do not deactivate the subscription at least 24 hours before the end of the current period. \n * Disable automatic renewal of subscriptions and generally the ability to manage subscriptions is available in your Google Play Store account settings. \n * Unused portion of the 3-day trial period, if any, will be canceled immediately upon purchase of the premium subscription during the free period. More information on managing and canceling subscriptions can be found here:  <a href="https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&amp;hl=en_US/">https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&amp;hl=en_US</a> </string>
+    <string name="one_month_free_trial">Alustage 1 kuu tasuta siis</string>
+    <string name="per_week"> /nädal</string>
+    <string name="continue_btn_text">Jätka</string>
+    <string name="amp_cllrcc">&amp;</string>
+    <string name="featured_text_1">Salvestage kõnesid piiranguteta</string>
+    <string name="featured_text_2">Kuulake ja jagage oma salvestisi</string>
+    <string name="featured_text_3">Kasutage professionaalset helisalvestit</string>
+
+    <string name="special_subs_short_desc">Pakkumise lõppedes tasutakse tellimus automaatselt ja teilt võetakse kord nädalas 1,99 dollarit, kuni tellimuse tühistate. Saate tellimusest igal ajal loobuda. Tutvuge meie privaatsuspoliitika ja kasutustingimustega.</string>
+    <string name="special_subs_long_desc" translatable="false">This app doesn’t include free content. You need subscribe to use it. Subscription : After 1-month free period, your payment will be automatically charged $ 1.99 per week. You are offered one premium subscription with automatic renewal and cancellation at any time. Take advantage of the 1-month trial period and cancel your subscription during this 1-month trial period, you will not be charged and you can do so at any time. You will only be charged when your Premium subscription expires, which will automatically renew for 1 week. Payment will be charged upon confirmation of purchase from your Google account. The trial period will automatically renew to a paid subscription unless it is turned off at least 24 hours before the end of the current period. You can turn off auto-renewal and manage your subscriptions by going to your Google Play Store account settings after purchase. Follow the link to see how to manage or cancel your subscriptions: https:/support.google.com/googleplay/answer/7018481?co=GENIE.P atform%3DAndroid&amp;amp/,hl=en
+Any unused portion of the 1-month free trial (if offered) will be forfeited when purchasing a premium subscription during the free trial. Personal data is processed in accordance with the terms of the privacy policy.
+</string>
+    <string name="featured_text_4">Installige turvaline paroolikaitse</string>
+    <string name="featured_text_5">Laadige salvestised üles Google Drive\'i</string>
+    <string name="three_days_free_trial">Alustage 3-päevast tasuta. pärast seda</string>
+    <string name="main_text_special_subs">Tasuta juurdepääs meie teenustele 30 päeva</string>
+
+
+</resources>

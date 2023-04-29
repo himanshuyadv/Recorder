@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+        <import type="android.content.Context" />
+
+        <variable
+            name="isPlaying"
+            type="boolean" />
+
+        <variable
+            name="record"
+            type="com.ansh.recorder.core.data.model.RecordModel" />
+
+        <variable
+            name="viewModelRH"
+            type="com.ansh.recorder.ui.record_history.RecordHistoryViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ansh.recorder.ui.recording.verify_cll_rec.AudioWaveView
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
+            app:animateExpansion="true"
+            app:chunkHeight="100dp"
+            app:chunkRadius="0dp"
+            app:chunkSpacing="2dp"
+            app:chunkWidth="3dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:minChunkHeight="5dp"
+            app:touchable="true"
+            app:waveColor="@android:color/black" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/red_line_seek_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-12dp"
+            android:background="@drawable/thumb_seekbar"
+            app:layout_constraintBottom_toBottomOf="@id/wave"
+            app:layout_constraintStart_toStartOf="@id/wave"
+            app:layout_constraintTop_toTopOf="@id/wave" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/resume_pause_rec"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:background="@{isPlaying ? @drawable/ic_pause_cll_rcc : @drawable/ic_play_white }"
+            android:onClick="@{() -> viewModelRH.startPausePlayingCllRcc()}"
+            app:layout_constraintBottom_toTopOf="@id/btns"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wave" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/click_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:onClick="@{ () -> viewModelRH.saveRecordCllRcc(record)}"
+                android:orientation="vertical">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha="@{  1.0f}"
+                    android:background="@drawable/ic_save_cll_rcc" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_cll_rcc"
+                    android:text="@string/save_cll_rcc"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/click_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+
+                android:onClick="@{ () ->  viewModelRH.shareRecordCllRcc(record) }"
+                android:orientation="vertical">
+
+                <com.google.android.material.imageview.ShapeableImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha="@{  1.0f }"
+                    android:background="@drawable/ic_share_cll_rcc" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_cll_rcc"
+                    android:text="@string/share_cll_rcc"
+                    android:textSize="10sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/click_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:onClick="@{() -> viewModelRH.deleteRecordCllRcc(record)}"
+                android:orientation="vertical">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_delete_cll_rcc" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_cll_rcc"
+                    android:text="@string/delete_cll_rcc"
+                    android:textSize="10sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

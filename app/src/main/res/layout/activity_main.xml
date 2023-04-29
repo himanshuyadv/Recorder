@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_cll_rcc">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_am"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/toolbar_bg_shape"
+            android:padding="4dp"
+            app:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+
+                android:id="@+id/toolbar_am"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:title="Contacts"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/AppBarTextAppearance"
+                app:titleTextColor="@color/main_text_color_cll_rcc">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ic_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/ic_search_cll_rcc" />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <fragment
+            android:id="@+id/nav_host_fragment_am"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@id/bottom_navigation_am"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_bar_am"
+            app:navGraph="@navigation/app_navigation_cll_rcc" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_am"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_cll_rcc"
+            android:backgroundTint="@null"
+            app:itemIconTint="@color/menu_selector"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/app_menu_cllrcc" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ic_three_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/ic_burger_cll_rcc"
+            android:elevation="100dp"
+            app:layout_constraintBottom_toBottomOf="@id/app_bar_am"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

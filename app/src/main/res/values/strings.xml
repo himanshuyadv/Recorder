@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name" translatable="false">CallRecorder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment_cll_rcc" translatable="false">Hello blank fragment</string>
+    <string name="splash_voice_rec_cll_rcc" translatable="false">/</string>
+    <string name="link_content_public_download_cll_rcc" translatable="false">content://downloads/public_downloads</string>
+    <string name="image_txt_voice_rec_cll_rcc" translatable="false">image</string>
+    <string name="video_voice_rec_txt_cll_rcc" translatable="false">video</string>
+    <string name="audio_voice_rec_txt_cll_rcc" translatable="false">audio</string>
+    <string name="id_qwesion_voice_rec_cll_rcc" translatable="false">_id=?</string>
+    <string name="content_voice_rec_txt_cll_rcc" translatable="false">content</string>
+    <string name="file_voice_rec_cll_rcc" translatable="false">file</string>
+    <string name="music_voice_rec_cll_rcc" translatable="false">Music</string>
+    <string name="audiobooks_voice_rec_cll_rcc" translatable="false">Audiobooks</string>
+    <string name="ringtones_voice_rec_cll_rcc" translatable="false">Ringtones</string>
+    <string name="alarms_voice_rec_cll_rcc" translatable="false">Alarms</string>
+    <string name="notifications_voice_rec_cll_rcc" translatable="false">Notifications</string>
+    <string name="podcasts_voice_rec_cll_rcc" translatable="false">Podcasts</string>
+    <string name="two_dots_txt_voice_rec_cll_rcc" translatable="false">:</string>
+
+
+    <string name="accessibility_service_description_cll_rcc" translatable="false">Accessibility</string>
+    <string name="search_hint" translatable="false">Search</string>
+    <string name="title_all" translatable="false">All</string>
+    <string name="title_incoming" translatable="false">In</string>
+    <string name="title_outgoing" translatable="false">Out</string>
+    <string name="start_recording_cll_rcc" translatable="false">Start recording</string>
+    <string name="miss" translatable="false">Miss</string>
+    <string name="save_cll_rcc" translatable="false">Save</string>
+    <string name="delete_cll_rcc" translatable="false">Delete</string>
+    <string name="share_cll_rcc" translatable="false">Share</string>
+    <string name="save_gd" translatable="false">Save GD</string>
+    <string name="call_two_slash" translatable="false">/Call/</string>
+    <string name="new_out_call" translatable="false">android.intent.action.NEW_OUTGOING_CALL</string>
+    <string name="phone_number_intent" translatable="false">android.intent.extra.PHONE_NUMBER</string>
+    <string name="perm_not_granted" translatable="false">Permissions not granted</string>
+    <string name="password_cll_rcc" translatable="false">password</string>
+    <string name="about_link" translatable="false">https://www.google.com</string>
+    <string name="privicy_pol" translatable="false">https://www.google.com</string>
+    <string name="saved_cll_rcc" translatable="false">Saved</string>
+    <string name="week_cll_rcc" translatable="false">Weak</string>
+    <string name="medium" translatable="false">Medium</string>
+    <string name="so_so" translatable="false">So-so</string>
+    <string name="strong" translatable="false">Strong</string>
+    <string name="good" translatable="false">Good</string>
+    <string name="very_strong" translatable="false">Very Strong</string>
+    <string name="great" translatable="false">Great</string>
+    <string name="very_week" translatable="false">Very Week</string>
+    <string name="deleted" translatable="false">Deleted</string>
+    <string name="zero_zero_cll_rcc" translatable="false">00:00</string>
+    <string name="media_not" translatable="false">Media notifiaction channel</string>
+    <string name="media_locks" translatable="false">Media lockscreen controls</string>
+    <string name="pause" translatable="false">Pause</string>
+    <string name="recording_cll_rcc" translatable="false">Recording..</string>
+    <string name="call_splash" translatable="false">/Call</string>
+    <string name="samsung_cll_rcc" translatable="false">samsung</string>
+    <string name="mm_ss" translatable="false">mm:ss</string>
+    <string name="notif_service_ex" translatable="false">org.insta.callrecorder.NOTIFICATION_LISTENER_SERVICE_EXAMPLE</string>
+    <string name="command" translatable="false">command</string>
+    <string name="clearall" translatable="false">clearall</string>
+    <string name="list" translatable="false">list</string>
+    <string name="calling" translatable="false">calling</string>
+    <string name="restart_cll_rcc" translatable="false">restart</string>
+    <string name="input_extra" translatable="false">inputExtra</string>
+    <string name="call_recorder" translatable="false">Call recorder</string>
+    <string name="recording_Enabled" translatable="false">Recording enabled</string>
+    <string name="music_service" translatable="false">MusicService</string>
+    <string name="cant_create" translatable="false">\"Can\'t create \"</string>
+    <string name="no_sim" translatable="false">You haven\'t Sim Card</string>
+    <string name="call_rec_ta" translatable="false">CallRecorder:Tag</string>
+    <string name="gb_cll_rcc" translatable="false">GB</string>
+    <string name="com_whatsapp_cll_rcc" translatable="false">com.whatsapp</string>
+    <string name="n_cll_rcc" translatable="false">n</string>
+    <string name="space_cll_rcc" translatable="false"> </string>
+    <string name="xiaomi_cll_rcc" translatable="false">xiaomi</string>
+    <string name="tel_cll_rcc" translatable="false">tel:</string>
+    <string name="com_miuiu_sec_cll_rcc" translatable="false">com.miui.securitycenter</string>
+    <string name="audio_slash_cll_rcc" translatable="false">audio/*</string>
+    <string name="share_to_cll_rcc" translatable="false">Share to</string>
+    <string name="asc_cll_rcc" translatable="false">ASC</string>
+    <string name="enter_the_title_or_record" translatable="false">Enter the title or record</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="contacts" translatable="false">Contacts</string>
+    <string name="record_cllrcc" translatable="false">Record</string>
+    <string name="call_history" translatable="false">Call history</string>
+    <string name="record_history" translatable="false">Record history</string>
+    <string name="new_password" translatable="false">New Password</string>
+    <string name="team_info_about_app" translatable="false">Team, info about app</string>
+    <string name="about_cllrcc" translatable="false">About</string>
+    <string name="current_password" translatable="false">Current password</string>
+    <string name="create_new_password" translatable="false">Create new password</string>
+    <string name="the_input_field_is_empty" translatable="false">*the input field is empty</string>
+    <string name="enter_recording_name" translatable="false">Enter recording name</string>
+    <string name="name_cllrcc" translatable="false">Name</string>
+    <string name="enter_password" translatable="false">Enter Password</string>
+    <string name="enter_password_cllrcc" translatable="false">Enter your password</string>
+    <string name="statement_or_legal_document" translatable="false">Statement or legal document</string>
+    <string name="create_change_or_delete_password" translatable="false">Create change or delete password</string>
+    <string name="password_cllrcc" translatable="false">Password</string>
+    <string name="stop_cllrcc" translatable="false">Stop</string>
+
+    <!--   pushwoosh  -->
+    <string name="fcm_sender_id_cr" translatable="false">431895517813</string>
+    <string name="pushwoosh_app_id_cr" translatable="false">xxxxx</string>
+    <string name="Adjust_app_token_cr" translatable="false">xxxxx</string>
+    <string name="admob_app_id_cr" translatable="false">xxxxx</string>
+    <string name="admob_banner_add_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_ad_id_cr" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_rewarded_ad_id_cr" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="admob_native_ad_id_cr" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="subscription_product_id_cr" translatable="false">XXXXXXXXXXX</string>
+    <string name="special_subscription_product_id_cr" translatable="false">YYYYYYYY</string>
+    <string name="subscription_offer_token_cr" translatable="false">XXXXXXXX</string>
+    <string name="special_subscription_offer_token_cr" translatable="false">XXXXXXXX</string>
+    <string name="Privacy_policy_url_cr" translatable="false">http://www.google.com</string>
+    <string name="terms_of_use_url_cr" translatable="false">http://www.youtube.com</string>
+
+    <!--    manually translatable-->
+
+    <string name="one_month_free_trial">Start 1-Month for free then</string>
+    <string name="three_days_free_trial">Start 3-Days for free then</string>
+    <string name="per_week"> /week</string>
+
+    <!--    Subscription Screen Strings   -->
+    <string name="terms_of_use">Terms of use</string>
+    <string name="privacy_policy_cllrcc">Privacy policy</string>
+    <string name="translatable_short_desc">At the end of the offer, the subscription will be automatically paid and you will be charged 29.99$ once a week until you cancel your subscription. You can unsubscribe at any time. Check out our privacy policy and terms of use.</string>
+    <string name="subs_link" translatable="false"> <a href="https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&amp;hl=en_US/"> https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&amp;hl=en_US</a></string>
+    <string name="subscription_info_long" translatable="false">The cost of a weekly subscription, immediately after the end of the trial period, is $30.99. There is no free content in this app and you need to subscribe to use it. The subscription lasts 1 week and costs $30.99. At the end of the 3-day trial period, you will be charged. If you do not turn off the subscription at least 24 hours before the end of the trial period, then the trial version will be automatically renewed to the paid ones. You can turn off auto-renewal in your Google Play account settings. Buying a subscription means that you get unlimited access to all available content. After the end of the free trial period, your subscription will automatically renew: \n * You can unsubscribe at any time. \n * At first, you have the option of a free three-day trial. It starts immediately after confirmation of payment. Payment is only charged after the expiration date. The Premium subscription will automatically renew for 1 week for $30.99. \n * Payment is charged only after confirmation of purchase from your Google account. \n * Automatic renewal of the trial period, like a paid subscription, is inevitable if you do not deactivate the subscription at least 24 hours before the end of the current period. \n * Disable automatic renewal of subscriptions and generally the ability to manage subscriptions is available in your Google Play Store account settings. \n * Unused portion of the 3-day trial period, if any, will be canceled immediately upon purchase of the premium subscription during the free period. More information on managing and canceling subscriptions can be found here:  <a href="https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&amp;hl=en_US/">https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&amp;hl=en_US</a> </string>
+
+    <string name="continue_btn_text">Continue</string>
+    <string name="amp_cllrcc">&amp;</string>
+    <string name="featured_text_1">Record Calls Without Limits</string>
+    <string name="featured_text_2">Listen and share your recordings</string>
+    <string name="featured_text_3">Use a professional voice recorder</string>
+    <string name="featured_text_4">Install Secure password protection</string>
+    <string name="featured_text_5">Upload recordings to Google Drive</string>
+
+    <string name="special_subs_short_desc">At the end of the offer, the subscription will be automatically paid and you will be charged $1.99 once a week until you cancel your subscription. You can unsubscribe at any time. Check out our privacy policy and terms of use.</string>
+    <string name="special_subs_long_desc" translatable="false">This app does’t include free content. You need subscribe to use it. Subscription : After 1-month free period, your payment will be automatically charged $ 1.99 per week. You are offered one premium subscription with automatic renewal and cancellation at any time. Take advantage of the 1-month trial period and cancel your subscription during this 1-month trial period, you will not be charged and you can do so at any time. You will only be charged when your Premium subscription expires, which will automatically renew for 1 week. Payment will be charged upon confirmation of purchase from your Google account. The trial period will automatically renew to a paid subscription unless it is turned off at least 24 hours before the end of the current period. You can turn off auto-renewal and manage your subscriptions by going to your Google Play Store account settings after purchase. Follow the link to see how to manage or cancel your subscriptions: https:/support.google.com/googleplay/answer/7018481?co=GENIE.P atform%3DAndroid&amp;amp/,hl=en
+Any unused portion of the 1-month free trial (if offered) will be forfeited when purchasing a premium subscription during the free trial. Personal data is processed in accordance with the terms of the privacy policy.
+</string>
+    <string name="privacy_policy_fm" translatable="false">Privacy Policy</string>
+    <string name="main_text_special_subs">No-cost access to our services for 30 days</string>
+
+</resources>

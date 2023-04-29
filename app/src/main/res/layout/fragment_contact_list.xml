@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_gradient_cll_rcc">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/contacts_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:backgroundTint="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_search_light_cllrcc"
+                android:focusedByDefault="false"
+                android:hint="@string/search_hint"
+                android:imeOptions="actionSearch"
+                android:maxLength="20"
+                android:padding="12dp"
+                android:textColor="@color/main_text_color_cll_rcc"
+                android:textColorHint="@color/metall"
+                tools:targetApi="o" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contacts_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/contact_list_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:indicatorColor="@color/white_cll_rcc"
+            app:indicatorSize="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/contacts_list"
+            app:layout_constraintStart_toStartOf="@id/contacts_list"
+            app:layout_constraintTop_toTopOf="parent"
+            app:trackColor="@color/main_black_cll_rcc"
+            app:trackCornerRadius="5dp"
+            app:trackThickness="6dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

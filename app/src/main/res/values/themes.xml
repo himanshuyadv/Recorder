@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.CallRecorder" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/whitish</item>
+    </style>
+
+    <style name="AppBarTextAppearance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="fontFamily">@font/montserrat_bold_cll_rcc</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Corner50" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="tab_text_cll_rcc" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/montserrat_cll_rcc</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

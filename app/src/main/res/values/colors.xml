@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200_cll_rcc" tools:ignore="MissingDefaultResource">#FFBB86FC</color>
+    <color name="purple_500_cll_rcc" tools:ignore="MissingDefaultResource">#FF6200EE</color>
+    <color name="purple_700_cll_rcc" tools:ignore="MissingDefaultResource">#FF3700B3</color>
+    <color name="teal_200_cll_rcc" tools:ignore="MissingDefaultResource">#FF03DAC5</color>
+    <color name="teal_700_cll_rcc" tools:ignore="MissingDefaultResource">#FF018786</color>
+    <color name="black_cll_rcc" tools:ignore="MissingDefaultResource">#FF000000</color>
+    <color name="white_cll_rcc" tools:ignore="MissingDefaultResource">#FFFFFFFF</color>
+    <color name="menu_background_cll_rcc">#1A1B21</color>
+    <color name="dark_red_ripple">#E54D45</color>
+    <color name="main_black_cll_rcc">#121217</color>
+    <color name="hint_text_color">#414153</color>
+    <color name="bgr_color_equalizer">#22222C</color>
+    <color name="main_red_cll_rcc">#EF3024</color>
+    <color name="main_text_color_cll_rcc">#3E3E3E</color>
+    <color name="whitish">#E6E6E6</color>
+    <color name="metall">#CFD1DC</color>
+    <color name="medium">#7B7B7B</color>
+    <color name="subs_bg_color">#F3F4FA</color>
+    <color name="background_view_colour_subs">#4DFFFFFF</color>
+
+</resources>

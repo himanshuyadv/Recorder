@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_contacts"
+        android:icon="@drawable/ic_contacts_cllrcc"
+        android:title="@string/contacts" />
+    <item
+        android:id="@+id/action_record"
+        android:icon="@drawable/ic_record_cllrcc"
+        android:title="@string/record_cllrcc" />
+    <item
+        android:id="@+id/action_call_history"
+        android:icon="@drawable/ic_call_history_cllrcc"
+        android:title="@string/call_history" />
+    <item
+        android:id="@+id/action_recording_history"
+        android:icon="@drawable/ic_recordings_history"
+        android:title="@string/record_history" />
+</menu>

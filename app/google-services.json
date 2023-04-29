@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "431895517813",
+    "project_id": "call-recorder-54717",
+    "storage_bucket": "call-recorder-54717.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431895517813:android:9fb11a394627a2ea5ff63c",
+        "android_client_info": {
+          "package_name": "com.ansh.recorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431895517813-il5lm1kign6r1p0can21ct573ivp6kqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu5IRw7xkzyRoigkohR0rfJHDoSiQG8Zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431895517813-il5lm1kign6r1p0can21ct573ivp6kqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

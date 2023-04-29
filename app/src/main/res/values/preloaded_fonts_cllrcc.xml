@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/montserrat_cll_rcc</item>
+        <item>@font/montserrat_bold_cll_rcc</item>
+    </array>
+</resources>

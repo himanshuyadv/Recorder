@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:autoSizeMaxTextSize="22sp"
+        android:id="@+id/tv_subs_featured_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black_cll_rcc"
+        android:textStyle="bold"
+        tools:targetApi="o"
+        tools:text="@string/one_month_free_trial" />
+
+</RelativeLayout>
